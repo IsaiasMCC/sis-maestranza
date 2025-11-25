@@ -1,0 +1,39 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+@import 'buttons';
+@import 'form';
+
+@import 'tailwindcss/utilities';
+
+/* Contraste alto */
+.high-contrast {
+  filter: contrast(1.5);
+}
+
+/* Temas con variables CSS */
+.kids {
+  --color-bg: #fff3e0;
+  --color-primary: #ffeb3b;
+  --color-text: #6b4c00;
+}
+
+.youth {
+  --color-bg: #e3f2fd;
+  --color-primary: #03a9f4;
+  --color-text: #0d47a1;
+}
+
+.adult {
+  --color-bg: #e8f5e9;
+  --color-primary: #8bc34a;
+  --color-text: #33691e;
+}
+
+/* Aplicar las variables en el layout */
+.theme-wrapper {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: all 0.3s ease;
+}
+
