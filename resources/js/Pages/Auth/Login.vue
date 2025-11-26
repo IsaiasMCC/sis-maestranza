@@ -55,7 +55,7 @@ export default {
   },
   methods: {
     login() {
-      this.form.post('/login')
+      this.form.post('/inf513/grupo10sc/proyecto2/sis-maestranza/public/login')
     },
   },
 }

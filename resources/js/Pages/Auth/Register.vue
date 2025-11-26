@@ -72,7 +72,7 @@ export default {
 
     methods: {
         register() {
-            this.form.post('/register')
+            this.form.post('/inf513/grupo10sc/proyecto2/sis-maestranza/public/register')
         },
     },
 }
