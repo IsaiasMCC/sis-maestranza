@@ -1,35 +1,42 @@
 <template>
-  <div>
+  <div :style="{ color: 'var(--color-text)', backgroundColor: 'var(--color-bg)' }" class="min-h-screen p-6">
+
     <Head title="Users" />
-    <h1 class="mb-8 text-3xl font-bold">Users</h1>
+    <h1 class="mb-8 text-3xl font-bold" :style="{ color: 'var(--color-text)' }">Users</h1>
+
     <div class="flex items-center justify-between mb-6">
       <search-filter v-model="form.search" class="mr-4 w-full max-w-md" @reset="reset">
-        <label class="block text-gray-700">Role:</label>
+        <label class="block mb-1" :style="{ color: 'var(--color-text)' }">Role:</label>
         <select v-model="form.role" class="form-select mt-1 w-full">
           <option :value="null" />
           <option value="user">User</option>
           <option value="owner">Owner</option>
         </select>
-        <label class="block mt-4 text-gray-700">Trashed:</label>
+
+        <label class="block mt-4 mb-1" :style="{ color: 'var(--color-text)' }">Trashed:</label>
         <select v-model="form.trashed" class="form-select mt-1 w-full">
           <option :value="null" />
           <option value="with">With Trashed</option>
           <option value="only">Only Trashed</option>
         </select>
       </search-filter>
+
       <Link class="btn-indigo" href="/users/create">
         <span>Create</span>
         <span class="hidden md:inline">&nbsp;User</span>
       </Link>
     </div>
-    <div class="bg-white rounded-md shadow overflow-x-auto">
+
+    <div class="rounded-md shadow overflow-x-auto" :style="{ backgroundColor: 'var(--color-card-bg)' }">
       <table class="w-full whitespace-nowrap">
-        <tr class="text-left font-bold">
+        <tr class="text-left font-bold" :style="{ color: 'var(--color-text)' }">
           <th class="pb-4 pt-6 px-6">Name</th>
           <th class="pb-4 pt-6 px-6">Email</th>
           <th class="pb-4 pt-6 px-6" colspan="2">Role</th>
         </tr>
-        <tr v-for="user in users" :key="user.id" class="hover:bg-gray-100 focus-within:bg-gray-100">
+
+        <tr v-for="user in users" :key="user.id"
+            class="hover:bg-gray-200 focus-within:bg-gray-200">
           <td class="border-t">
             <Link class="flex items-center px-6 py-4 focus:text-indigo-500" :href="`/users/${user.id}/edit`">
               <img v-if="user.photo" class="block -my-2 mr-2 w-5 h-5 rounded-full" :src="user.photo" />
@@ -53,11 +60,15 @@
             </Link>
           </td>
         </tr>
+
         <tr v-if="users.length === 0">
-          <td class="px-6 py-4 border-t" colspan="4">No users found.</td>
+          <td class="px-6 py-4 border-t text-center" :style="{ color: 'var(--color-text)' }" colspan="4">
+            No users found.
+          </td>
         </tr>
       </table>
     </div>
+
   </div>
 </template>
 
@@ -71,17 +82,9 @@ import mapValues from 'lodash/mapValues'
 import SearchFilter from '@/Shared/SearchFilter.vue'
 
 export default {
-  components: {
-    Head,
-    Icon,
-    Link,
-    SearchFilter,
-  },
+  components: { Head, Icon, Link, SearchFilter },
   layout: Layout,
-  props: {
-    filters: Object,
-    users: Array,
-  },
+  props: { filters: Object, users: Array },
   data() {
     return {
       form: {

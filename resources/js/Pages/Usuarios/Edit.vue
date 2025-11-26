@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div :style="{ color: 'var(--color-text)', backgroundColor: 'var(--color-bg)' }" class="min-h-screen p-6">
     <Head :title="`${form.nombres} ${form.apellidos}`" />
-    <h1 class="mb-8 text-3xl font-bold">
+    <h1 class="mb-8 text-3xl font-bold" :style="{ color: 'var(--color-text)' }">
       <Link class="text-indigo-400 hover:text-indigo-600" href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios">Usuarios</Link>
       <span class="text-indigo-400 font-medium">/</span> Editar
       {{ form.nombres }} {{ form.apellidos }}
     </h1>
 
-    <div class="max-w-3xl bg-white rounded-md shadow overflow-hidden">
+    <div class="max-w-3xl rounded-md shadow overflow-hidden" :style="{ backgroundColor: 'var(--color-card-bg)', color: 'var(--color-text)' }">
       <form @submit.prevent="update">
         <div class="flex flex-wrap -mb-8 -mr-6 p-8">
           <text-input v-model="form.ci" :error="form.errors.ci" class="pb-8 pr-6 w-full lg:w-1/2" label="CI*" />
@@ -25,7 +25,8 @@
           </select-input>
         </div>
 
-        <div class="flex items-center px-8 py-4 bg-gray-50 border-t border-gray-100">
+        <div class="flex items-center px-8 py-4 border-t"
+             :style="{ backgroundColor: 'var(--color-card-bg)', borderColor: 'var(--color-border)' }">
           <button class="text-red-600 hover:underline" type="button" @click="destroy">Eliminar Usuario</button>
           <loading-button :loading="form.processing" class="btn-indigo ml-auto" type="submit">Actualizar Usuario</loading-button>
         </div>

@@ -16,4 +16,14 @@ class DetallePago extends Model
         'metodo_pago_id',
 
     ];
+
+    public function plan_pago()
+    {
+        return $this->belongsTo(PlanPago::class);
+    }
+
+    public function metodo_pago()
+    {
+        return $this->belongsTo(MetodoPago::class);
+    }
 }

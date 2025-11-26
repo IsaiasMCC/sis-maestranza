@@ -18,4 +18,5 @@ class Avance extends Model
     {
         return $this->belongsTo(PresupuestoServicio::class, 'presupuesto_servicio_id');
     }
+    
 }

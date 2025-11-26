@@ -200,6 +200,7 @@ import MainMenu from '@/Shared/MainMenu.vue'
 import FlashMessages from '@/Shared/FlashMessages.vue'
 import useTheme from '@/Composables/useTheme'
 import Footer from './Footer.vue'
+import { router } from '@inertiajs/vue3';
 
 export default {
   components: {
@@ -208,7 +209,7 @@ export default {
     Dropdown,
     MainMenu,
     FlashMessages,
-    Footer
+    Footer,
   },
   props: {
     auth: Object,
@@ -221,7 +222,7 @@ export default {
 
     function search() {
       if (!searchQuery.value) return
-      Inertia.get('/search', { q: searchQuery.value })
+      router.get('/inf513/grupo10sc/proyecto2/sis-maestranza/public/search', { q: searchQuery.value })
     }
 
     // Menús de temas

@@ -39,7 +39,7 @@ class DashboardController extends Controller
         $q = $request->input('q');
 
         // Buscar en usuarios
-        $users = User::where('name', 'like', "%{$q}%")
+        $users = User::where('nombres', 'like', "%{$q}%")
             ->orWhere('email', 'like', "%{$q}%")
             ->get();
 
@@ -51,7 +51,7 @@ class DashboardController extends Controller
         // Buscar en ventas (planes de pago)
         $ventas = PlanPago::where('total', 'like', "%{$q}%")->get();
 
-        return Inertia::render('Search/Results', [
+        return Inertia::render('Search/Result', [
             'query' => $q,
             'users' => $users,
             'reservas' => $reservas,

@@ -101,6 +101,22 @@ export default {
             { label: "Mis Reservas Trabajador", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/mis-reservas-empleado", icon: "users", permission: "reservas empleado visualizar" },
           ],
         },
+
+        {
+          label: "Gestión de Plan de pagos",
+          items: [
+            { label: "Pagos", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/plan-pagos", icon: "users", permission: "reservas visualizar" },
+           
+          ],
+        },
+
+        {
+          label: "Reportes",
+          items: [
+            { label: "Reservas", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/reservas/reportes", icon: "users", permission: "reservas visualizar" },
+            { label: "Servicios", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/servicios/reportes", icon: "users", permission: "reservas visualizar" },
+          ],
+        },
       ],
     }
   },

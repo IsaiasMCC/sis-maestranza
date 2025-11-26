@@ -13,4 +13,14 @@ class PlanPago extends Model
         'total',
         'reserva_id',
     ];
+
+    public function reserva()
+    {
+        return  $this->belongsTo(Reserva::class, 'reserva_id');
+    }
+
+    public function detalle_pagos()
+    {
+        return $this->hasMany(DetallePago::class);
+    }
 }

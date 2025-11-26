@@ -148,7 +148,8 @@ class ReservaController extends Controller
         $reserva = Reserva::with([
             'detalles.servicio',
             'detalles.trabajador',
-            'tickets.mensajes.empleado' // <-- carga los tickets con sus mensajes y el empleado que los envió
+            'tickets.mensajes.empleado', // <-- carga los tickets con sus mensajes y el empleado que los envió
+            'plan_pago'
         ])->findOrFail($id);
 
         $trabajadores = User::all();

@@ -32,4 +32,9 @@ class Reserva extends Model
     {
         return $this->hasMany(Ticket::class);
     }
+
+    public function plan_pago()
+    {
+        return $this->hasOne(PlanPago::class);
+    }
 }

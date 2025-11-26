@@ -33,6 +33,6 @@ class PresupuestoServicio extends Model
 
     public function avances()
     {
-        return $this->hasMany(Avance::class);
+        return $this->hasMany(Avance::class, 'presupuesto_servicio_id');
     }
 }
