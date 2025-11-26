@@ -76,42 +76,42 @@ export default {
         {
           label: "Gestión de Usuarios",
           items: [
-            { label: "Roles", href: "/roles", icon: "shield-check", permission: "roles visualizar" },
-            { label: "Usuarios", href: "/usuarios", icon: "users", permission: "usuarios visualizar" },
+            { label: "Roles", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles", icon: "shield-check", permission: "roles visualizar" },
+            { label: "Usuarios", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios", icon: "users", permission: "usuarios visualizar" },
           ],
         },
         {
           label: "Gestión de Servicios",
           items: [
-            { label: "Métodos de Pago", href: "/metodo-pagos", icon: "credit-card", permission: "metodos-pagos visualizar" },
-            { label: "Servicios", href: "/servicios", icon: "briefcase", permission: "servicios visualizar" },
+            { label: "Métodos de Pago", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/metodo-pagos", icon: "credit-card", permission: "metodos-pagos visualizar" },
+            { label: "Servicios", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/servicios", icon: "briefcase", permission: "servicios visualizar" },
           ],
         },
         {
           label: "Gestión de Catálogos de Servicios",
           items: [
-            { label: "Catálogo", href: "/contratar-servicios", icon: "clipboard-list", permission: "catalogo servicios visualizar" },
+            { label: "Catálogo", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/contratar-servicios", icon: "clipboard-list", permission: "catalogo servicios visualizar" },
           ],
         },
         {
           label: "Gestión de Reservas / Contrataciones",
           items: [
-            { label: "Reservas", href: "/reservas", icon: "calendar", permission: "reservas visualizar" },
-            { label: "Mis Reservas Cliente", href: "/mis-reservas", icon: "user-check", permission: "reservas cliente visualizar" },
-            { label: "Mis Reservas Trabajador", href: "/mis-reservas-empleado", icon: "user-gear", permission: "reservas empleado visualizar" },
+            { label: "Reservas", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/reservas", icon: "calendar", permission: "reservas visualizar" },
+            { label: "Mis Reservas Cliente", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/mis-reservas", icon: "user-check", permission: "reservas cliente visualizar" },
+            { label: "Mis Reservas Trabajador", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/mis-reservas-empleado", icon: "user-gear", permission: "reservas empleado visualizar" },
           ],
         },
         {
           label: "Gestión de Plan de Pagos",
           items: [
-            { label: "Pagos", href: "/plan-pagos", icon: "cash", permission: "reservas visualizar" },
+            { label: "Pagos", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/plan-pagos", icon: "cash", permission: "reservas visualizar" },
           ],
         },
         {
           label: "Reportes",
           items: [
-            { label: "Reservas", href: "/reservas/reportes", icon: "chart-bar", permission: "reservas visualizar" },
-            { label: "Servicios", href: "/servicios/reportes", icon: "chart-pie", permission: "servicios visualizar" },
+            { label: "Reservas", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/reservas/reportes", icon: "chart-bar", permission: "reservas visualizar" },
+            { label: "Servicios", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/servicios/reportes", icon: "chart-pie", permission: "servicios visualizar" },
           ],
         },
       ],
