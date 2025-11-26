@@ -2,7 +2,7 @@
   <div :style="{ color: 'var(--color-text)' }">
     <Head title="Create Role" />
     <h1 class="mb-8 text-3xl font-bold" :style="{ color: 'var(--color-text)' }">
-      <Link class="hover:underline" :style="{ color: 'var(--color-primary)' }" href="/roles">Roles</Link>
+      <Link class="hover:underline" :style="{ color: 'var(--color-primary)' }" href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles">Roles</Link>
       <span class="font-medium mx-1">/</span> Create
     </h1>
 
@@ -75,7 +75,7 @@ export default {
   },
   methods: {
     store() {
-      this.form.post('/roles')
+      this.form.post('/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles')
     },
   },
 }

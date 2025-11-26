@@ -2,7 +2,7 @@
   <div>
     <Head title="Crear Usuario" />
     <h1 class="mb-8 text-3xl font-bold">
-      <Link class="text-indigo-400 hover:text-indigo-600" href="/usuarios">Usuarios</Link>
+      <Link class="text-indigo-400 hover:text-indigo-600" href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios">Usuarios</Link>
       <span class="text-indigo-400 font-medium">/</span> Crear
     </h1>
 
@@ -49,7 +49,7 @@ export default {
     }
   },
   methods: {
-    store() { this.form.post('/usuarios') },
+    store() { this.form.post('/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios') },
   },
 }
 </script>

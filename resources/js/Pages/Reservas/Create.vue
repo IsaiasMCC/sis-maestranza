@@ -79,7 +79,7 @@ export default {
   methods: {
     guardarReserva() {
       // Todo ya está en form.servicios
-      this.form.post('/reservas')
+      this.form.post('/inf513/grupo10sc/proyecto2/sis-maestranza/public/reservas')
     },
   },
 }

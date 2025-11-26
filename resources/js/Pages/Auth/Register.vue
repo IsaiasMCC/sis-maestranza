@@ -27,7 +27,7 @@
 
                 </div>
                 <div class="text-center">
-                    <a href="/login" class="text-sm text-indigo-600 hover:underline">
+                    <a href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/login" class="text-sm text-indigo-600 hover:underline">
                         ¿Ya tienes una cuenta? Inicia sesión aquí
                     </a>
                 </div>

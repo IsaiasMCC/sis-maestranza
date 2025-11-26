@@ -76,29 +76,29 @@ export default {
         {
           label: "Gestión de Usuarios",
           items: [
-            { label: "Roles", href: "/roles", icon: "users", permission: "roles visualizar" },
-            { label: "Usuarios", href: "/usuarios", icon: "users", permission: "usuarios visualizar" },
+            { label: "Roles", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles", icon: "users", permission: "roles visualizar" },
+            { label: "Usuarios", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios", icon: "users", permission: "usuarios visualizar" },
           ],
         },
         {
           label: "Gestión de Servicios",
           items: [
-            { label: "Metodo Pagos", href: "/metodo-pagos", icon: "office", permission: "metodos-pagos visualizar" },
-            { label: "Servicios", href: "/servicios", icon: "office", permission: "servicios visualizar" },
+            { label: "Metodo Pagos", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/metodo-pagos", icon: "office", permission: "metodos-pagos visualizar" },
+            { label: "Servicios", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/servicios", icon: "office", permission: "servicios visualizar" },
           ],
         },
         {
           label: "Gestión de Catalogos Servicios",
           items: [
-            { label: "Catalogo", href: "/contratar-servicios", icon: "users", permission: "catalogo servicios visualizar" },
+            { label: "Catalogo", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/contratar-servicios", icon: "users", permission: "catalogo servicios visualizar" },
           ],
         },
         {
           label: "Gestión de Reservas / Contrataciones",
           items: [
-            { label: "Reservas", href: "/reservas", icon: "users", permission: "reservas visualizar" },
-            { label: "Mis Reservas Cliente", href: "/mis-reservas", icon: "users", permission: "reservas cliente visualizar" },
-            { label: "Mis Reservas Trabajador", href: "/mis-reservas-empleado", icon: "users", permission: "reservas empleado visualizar" },
+            { label: "Reservas", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/reservas", icon: "users", permission: "reservas visualizar" },
+            { label: "Mis Reservas Cliente", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/mis-reservas", icon: "users", permission: "reservas cliente visualizar" },
+            { label: "Mis Reservas Trabajador", href: "/inf513/grupo10sc/proyecto2/sis-maestranza/public/mis-reservas-empleado", icon: "users", permission: "reservas empleado visualizar" },
           ],
         },
       ],

@@ -2,7 +2,7 @@
   <div :style="{ color: 'var(--color-text)' }">
     <Head title="Crear Método de Pago" />
     <h1 class="mb-8 text-3xl font-bold" :style="{ color: 'var(--color-text)' }">
-      <Link class="hover:underline" :style="{ color: 'var(--color-primary)' }" href="/metodo-pagos">Métodos de Pago</Link>
+      <Link class="hover:underline" :style="{ color: 'var(--color-primary)' }" href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/metodo-pagos">Métodos de Pago</Link>
       <span class="font-medium mx-1">/</span> Crear
     </h1>
 
@@ -43,7 +43,7 @@ export default {
     }
   },
   methods: {
-    store() { this.form.post('/metodo-pagos') }
+    store() { this.form.post('/inf513/grupo10sc/proyecto2/sis-maestranza/public/metodo-pagos') }
   }
 }
 </script>

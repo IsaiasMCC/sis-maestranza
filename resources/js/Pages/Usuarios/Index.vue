@@ -9,7 +9,7 @@
         <input v-model="form.search" type="text" class="form-input mt-1 w-full" placeholder="Buscar usuarios..." />
       </search-filter>
 
-      <Link class="btn-indigo" href="/usuarios/create">
+      <Link class="btn-indigo" href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios/create">
         <span>Crear</span>
         <span class="hidden md:inline">&nbsp;Usuario</span>
       </Link>
@@ -29,25 +29,25 @@
 
         <tr v-for="user in users.data" :key="user.id" class="hover:bg-gray-100 focus-within:bg-gray-100">
           <td class="border-t">
-            <Link class="flex items-center px-6 py-4" :href="`/usuarios/${user.id}/edit`">{{ user.ci }}</Link>
+            <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios/${user.id}/edit`">{{ user.ci }}</Link>
           </td>
           <td class="border-t">
-            <Link class="flex items-center px-6 py-4" :href="`/usuarios/${user.id}/edit`">{{ user.nombres }}</Link>
+            <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios/${user.id}/edit`">{{ user.nombres }}</Link>
           </td>
           <td class="border-t">
-            <Link class="flex items-center px-6 py-4" :href="`/usuarios/${user.id}/edit`">{{ user.apellidos }}</Link>
+            <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios/${user.id}/edit`">{{ user.apellidos }}</Link>
           </td>
           <td class="border-t">
-            <Link class="flex items-center px-6 py-4" :href="`/usuarios/${user.id}/edit`">{{ user.email }}</Link>
+            <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios/${user.id}/edit`">{{ user.email }}</Link>
           </td>
           <td class="border-t">
-            <Link class="flex items-center px-6 py-4" :href="`/usuarios/${user.id}/edit`">{{ user.role?.name }}</Link>
+            <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios/${user.id}/edit`">{{ user.role?.name }}</Link>
           </td>
           <td class="border-t">
-            <Link class="flex items-center px-6 py-4" :href="`/usuarios/${user.id}/edit`">{{ user.estado ? 'Activo' : 'Inactivo' }}</Link>
+            <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios/${user.id}/edit`">{{ user.estado ? 'Activo' : 'Inactivo' }}</Link>
           </td>
           <td class="w-px border-t">
-            <Link class="flex items-center px-4" :href="`/usuarios/${user.id}/edit`">
+            <Link class="flex items-center px-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios/${user.id}/edit`">
               <icon name="cheveron-right" class="block w-6 h-6 fill-gray-400" />
             </Link>
           </td>
@@ -84,7 +84,7 @@ export default {
     form: {
       deep: true,
       handler: throttle(function () {
-        this.$inertia.get('/usuarios', pickBy(this.form), { preserveState: true })
+        this.$inertia.get('/inf513/grupo10sc/proyecto2/sis-maestranza/public/usuarios', pickBy(this.form), { preserveState: true })
       }, 150),
     },
   },

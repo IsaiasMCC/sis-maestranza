@@ -15,7 +15,7 @@
         <option value="0">Inactivo</option>
       </select>
 
-      <Link class="btn-indigo" href="/metodo-pagos/create">
+      <Link class="btn-indigo" href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/metodo-pagos/create">
         Crear Método de Pago
       </Link>
     </div>
@@ -32,17 +32,17 @@
         <tbody>
           <tr v-for="metodo in metodos.data" :key="metodo.id" class="hover:bg-gray-100 focus-within:bg-gray-100 transition-colors" :style="{ backgroundColor: 'var(--color-bg)', color: 'var(--color-text)' }">
             <td class="border-t">
-              <Link class="flex items-center px-6 py-4 focus:text-indigo-500" :href="`/metodo-pagos/${metodo.id}/edit`">
+              <Link class="flex items-center px-6 py-4 focus:text-indigo-500" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/metodo-pagos/${metodo.id}/edit`">
                 {{ metodo.nombre }}
               </Link>
             </td>
             <td class="border-t">
-              <Link class="flex items-center px-6 py-4" :href="`/metodo-pagos/${metodo.id}/edit`" tabindex="-1">
+              <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/metodo-pagos/${metodo.id}/edit`" tabindex="-1">
                 {{ metodo.estado }}
               </Link>
             </td>
             <td class="w-px border-t">
-              <Link class="flex items-center px-4" :href="`/metodo-pagos/${metodo.id}/edit`" tabindex="-1">
+              <Link class="flex items-center px-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/metodo-pagos/${metodo.id}/edit`" tabindex="-1">
                 <icon name="cheveron-right" class="block w-6 h-6 fill-gray-400" />
               </Link>
             </td>
@@ -85,7 +85,7 @@ export default {
     form: {
       deep: true,
       handler: throttle(function () {
-        this.$inertia.get('/metodo-pagos', pickBy(this.form), { preserveState: true })
+        this.$inertia.get('/inf513/grupo10sc/proyecto2/sis-maestranza/public/metodo-pagos', pickBy(this.form), { preserveState: true })
       }, 150),
     },
   },

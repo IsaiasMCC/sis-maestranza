@@ -2,7 +2,7 @@
   <div :style="{ color: 'var(--color-text)' }">
     <Head :title="form.name" />
     <h1 class="mb-8 text-3xl font-bold" :style="{ color: 'var(--color-text)' }">
-      <Link class="hover:underline" :style="{ color: 'var(--color-primary)' }" href="/roles">Roles</Link>
+      <Link class="hover:underline" :style="{ color: 'var(--color-primary)' }" href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles">Roles</Link>
       <span class="font-medium mx-1">/</span>
       {{ form.name }}
     </h1>
@@ -89,11 +89,11 @@ export default {
   },
   methods: {
     update() {
-      this.form.put(`/roles/${this.role.id}`)
+      this.form.put(`/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles/${this.role.id}`)
     },
     destroy() {
       if (confirm('Are you sure you want to delete this role?')) {
-        this.$inertia.delete(`/roles/${this.role.id}`)
+        this.$inertia.delete(`/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles/${this.role.id}`)
       }
     },
   },

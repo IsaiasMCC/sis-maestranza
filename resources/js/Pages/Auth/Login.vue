@@ -18,7 +18,7 @@
           </label>
         </div>
         <div class="text-center mt-4">
-          <a href="/register" class="text-sm text-indigo-600 hover:underline">
+          <a href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/register" class="text-sm text-indigo-600 hover:underline">
             ¿No tienes una cuenta? Regístrate aquí
           </a>
         </div>

@@ -215,7 +215,7 @@ export default {
       data.append("detalles", this.nuevoTicket.detalles);
       data.append("reserva_id", this.reserva.id);
 
-      this.$inertia.post("/tickets", data, {
+      this.$inertia.post("/inf513/grupo10sc/proyecto2/sis-maestranza/public/tickets", data, {
         onSuccess: () => {
           this.modalTicket.abierto = false;
           this.nuevoTicket.detalles = "";
@@ -233,7 +233,7 @@ export default {
       data.append("ticket_id", ticket.id);
       data.append("empleado_id", this.userId);
 
-      this.$inertia.post("/mensajes", data, {
+      this.$inertia.post("/inf513/grupo10sc/proyecto2/sis-maestranza/public/mensajes", data, {
         onSuccess: () => {
           this.nuevoMensaje[ticket.id] = "";
         },

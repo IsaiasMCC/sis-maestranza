@@ -2,7 +2,7 @@
   <div :style="{ color: 'var(--color-text)' }">
     <Head title="Crear Servicio" />
     <h1 class="mb-8 text-3xl font-bold" :style="{ color: 'var(--color-text)' }">
-      <Link class="text-indigo-400 hover:text-indigo-600" href="/servicios">Servicios</Link>
+      <Link class="text-indigo-400 hover:text-indigo-600" href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/servicios">Servicios</Link>
       <span class="text-indigo-400 font-medium">/</span> Crear
     </h1>
 
@@ -84,7 +84,7 @@ export default {
   },
   methods: {
     store() {
-      this.form.post('/servicios')
+      this.form.post('/inf513/grupo10sc/proyecto2/sis-maestranza/public/servicios')
     },
   },
 }

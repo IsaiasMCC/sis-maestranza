@@ -9,7 +9,7 @@
         <input v-model="form.search" type="text" class="form-input mt-1 w-full" placeholder="Buscar roles..." />
       </search-filter>
 
-      <Link class="btn-indigo" href="/roles/create">
+      <Link class="btn-indigo" href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles/create">
         <span>Crear</span>
         <span class="hidden md:inline">&nbsp;Rol</span>
       </Link>
@@ -28,28 +28,28 @@
 
         <tr v-for="role in roles.data" :key="role.id" class="hover:bg-gray-200 focus-within:bg-gray-200">
           <td class="border-t">
-            <Link class="flex items-center px-6 py-4" :href="`/roles/${role.id}/edit`">
+            <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles/${role.id}/edit`">
               {{ role.name }}
             </Link>
           </td>
           <td class="border-t">
-            <Link class="flex items-center px-6 py-4" :href="`/roles/${role.id}/edit`" tabindex="-1">
+            <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles/${role.id}/edit`" tabindex="-1">
               {{ role.description }}
             </Link>
           </td>
           <td class="border-t">
-            <Link class="flex items-center px-6 py-4" :href="`/roles/${role.id}/edit`" tabindex="-1">
+            <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles/${role.id}/edit`" tabindex="-1">
               {{ role.estado }}
             </Link>
           </td>
           <td class="border-t">
             <Link class="px-2 py-1 bg-green-500 text-white rounded hover:bg-green-400 text-sm"
-                  :href="`/roles/${role.id}`">
+                  :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles/${role.id}`">
               Asignar Permisos
             </Link>
           </td>
           <td class="w-px border-t">
-            <Link class="flex items-center px-4" :href="`/roles/${role.id}/edit`" tabindex="-1">
+            <Link class="flex items-center px-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles/${role.id}/edit`" tabindex="-1">
               <Icon name="cheveron-right" class="block w-6 h-6 fill-gray-400" />
             </Link>
           </td>
@@ -99,7 +99,7 @@ export default {
     form: {
       deep: true,
       handler: throttle(function () {
-        this.$inertia.get('/roles', pickBy(this.form), { preserveState: true })
+        this.$inertia.get('/inf513/grupo10sc/proyecto2/sis-maestranza/public/roles', pickBy(this.form), { preserveState: true })
       }, 150),
     },
   },

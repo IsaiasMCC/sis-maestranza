@@ -2,7 +2,7 @@
   <div :style="{ color: 'var(--color-text)' }">
     <Head :title="form.nombre" />
     <h1 class="mb-8 text-3xl font-bold" :style="{ color: 'var(--color-text)' }">
-      <Link class="hover:underline" :style="{ color: 'var(--color-primary)' }" href="/metodo-pagos">Métodos de Pago</Link>
+      <Link class="hover:underline" :style="{ color: 'var(--color-primary)' }" href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/metodo-pagos">Métodos de Pago</Link>
       <span class="font-medium mx-1">/</span> {{ form.nombre }}
     </h1>
 
@@ -45,10 +45,10 @@ export default {
     }
   },
   methods: {
-    update() { this.form.put(`/metodo-pagos/${this.metodo.id}`) },
+    update() { this.form.put(`/inf513/grupo10sc/proyecto2/sis-maestranza/public/metodo-pagos/${this.metodo.id}`) },
     destroy() {
       if(confirm('¿Estás seguro de eliminar este método de pago?')){
-        this.$inertia.delete(`/metodo-pagos/${this.metodo.id}`)
+        this.$inertia.delete(`/inf513/grupo10sc/proyecto2/sis-maestranza/public/metodo-pagos/${this.metodo.id}`)
       }
     }
   }

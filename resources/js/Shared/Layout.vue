@@ -9,7 +9,7 @@
       <div class="md:flex md:shrink-0">
         <div :style="{ backgroundColor: 'var(--color-primary)', color: 'var(--color-text)' }"
           class="flex items-center justify-between px-6 py-4 md:shrink-0 md:justify-center md:w-56">
-          <Link class="mt-1" href="/">
+          <Link class="mt-1" href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/">
           <Logo class="fill-white" width="120" height="28" />
           </Link>
 
@@ -154,15 +154,15 @@
 
               <template #dropdown>
                 <div class="mt-2 py-2 text-sm bg-white rounded shadow-xl">
-                  <Link class="block px-6 py-2 hover:text-white hover:bg-indigo-500"
+                  <!-- <Link class="block px-6 py-2 hover:text-white hover:bg-indigo-500"
                     :href="`/users/${auth.user.id}/edit`">
                   My Profile
                   </Link>
 
                   <Link class="block px-6 py-2 hover:text-white hover:bg-indigo-500" href="/users">
                   Manage Users
-                  </Link>
-                  <Link class="block px-6 py-2 w-full text-left hover:text-white hover:bg-indigo-500" href="/logout"
+                  </Link> -->
+                  <Link class="block px-6 py-2 w-full text-left hover:text-white hover:bg-indigo-500" href="/inf513/grupo10sc/proyecto2/sis-maestranza/public/logout"
                     method="delete" as="button">
                   Logout
                   </Link>

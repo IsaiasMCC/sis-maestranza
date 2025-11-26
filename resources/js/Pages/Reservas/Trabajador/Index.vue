@@ -27,30 +27,30 @@
                     class="hover:bg-gray-100 focus-within:bg-gray-100">
                     <td class="border-t">
                         <Link class="flex items-center px-6 py-4 focus:text-indigo-500"
-                            :href="`/mis-reservas-empleado/detalle/${reserva.id}`" tabindex="-1">
+                            :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/mis-reservas-empleado/detalle/${reserva.id}`" tabindex="-1">
                         {{ reserva.id }}
                         </Link>
                     </td>
                     <td class="border-t">
-                        <Link class="flex items-center px-6 py-4" :href="`/mis-reservas-empleado/detalle/${reserva.id}`"
+                        <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/mis-reservas-empleado/detalle/${reserva.id}`"
                             tabindex="-1">
                         {{ reserva.fecha }}
                         </Link>
                     </td>
                     <td class="border-t">
-                        <Link class="flex items-center px-6 py-4" :href="`/mis-reservas-empleado/detalle/${reserva.id}`"
+                        <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/mis-reservas-empleado/detalle/${reserva.id}`"
                             tabindex="-1">
                         {{ reserva.hora }}
                         </Link>
                     </td>
                     <td class="border-t">
-                        <Link class="flex items-center px-6 py-4" :href="`/mis-reservas-empleado/detalle/${reserva.id}`"
+                        <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/mis-reservas-empleado/detalle/${reserva.id}`"
                             tabindex="-1">
                         Bs {{ reserva.total }}
                         </Link>
                     </td>
                     <td class="border-t">
-                        <Link class="flex items-center px-6 py-4" :href="`/reservas/${reserva.id}`" tabindex="-1">
+                        <Link class="flex items-center px-6 py-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/reservas/${reserva.id}`" tabindex="-1">
                         <span :class="{
                             'px-2 py-1 rounded-full text-white text-sm font-semibold': true,
                             'bg-yellow-500': reserva.estado_reserva === 'PENDIENTE',
@@ -63,7 +63,7 @@
                         </Link>
                     </td>
                     <td class="w-px border-t">
-                        <Link class="flex items-center px-4" :href="`/mis-reservas-empleado/detalle/${reserva.id}`"
+                        <Link class="flex items-center px-4" :href="`/inf513/grupo10sc/proyecto2/sis-maestranza/public/mis-reservas-empleado/detalle/${reserva.id}`"
                             tabindex="-1">
                         <Icon name="cheveron-right" class="block w-6 h-6 fill-gray-400" />
                         </Link>
@@ -114,7 +114,7 @@ export default {
         form: {
             deep: true,
             handler: throttle(function () {
-                this.$inertia.get('/mis-reservas', pickBy(this.form), { preserveState: true })
+                this.$inertia.get('/inf513/grupo10sc/proyecto2/sis-maestranza/public/mis-reservas', pickBy(this.form), { preserveState: true })
             }, 150),
         },
     },

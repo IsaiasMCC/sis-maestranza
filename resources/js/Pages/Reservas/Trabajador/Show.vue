@@ -262,7 +262,7 @@ export default {
                 data.append("foto", this.nuevoAvance.foto);
             }
 
-            this.$inertia.post("/avances", data, {
+            this.$inertia.post("/inf513/grupo10sc/proyecto2/sis-maestranza/public/avances", data, {
                 onSuccess: () => {
                     this.modal = false;
                     this.nuevoAvance = { notas: "", estado_avance: "PENDIENTE", foto: null, preview: null };
@@ -271,7 +271,7 @@ export default {
         },
 
         abrirImagenModal(foto) {
-            this.imagenModal.src = `/storage/${foto}`;
+            this.imagenModal.src = `/inf513/grupo10sc/proyecto2/sis-maestranza/public/storage/${foto}`;
             this.imagenModal.abierto = true;
         },
 

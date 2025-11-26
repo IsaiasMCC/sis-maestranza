@@ -84,7 +84,7 @@ export default {
     watch: {
         'form.search': {
             handler: function () {
-                this.$inertia.get('/servicios', { search: this.form.search }, { preserveState: true })
+                this.$inertia.get('/inf513/grupo10sc/proyecto2/sis-maestranza/public/servicios', { search: this.form.search }, { preserveState: true })
             },
             deep: true,
         },
@@ -100,7 +100,7 @@ export default {
             this.carrito = this.carrito.filter(s => s.id !== servicio.id)
         },
         generarCotizacion() {
-            this.$inertia.get('/reservas/create', {
+            this.$inertia.get('/inf513/grupo10sc/proyecto2/sis-maestranza/public/reservas/create', {
                 total: this.total,
                 servicios: JSON.stringify(this.carrito),
             });
